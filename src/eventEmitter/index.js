@@ -48,8 +48,6 @@ let fn1 = function (name, age) {
 let fn2 = function (name, age) {
   console.log(`hello, ${name} ${age}`);
 };
-eventBus.on('aaa', fn1);
-eventBus.on('aaa', fn2);
-eventBus.emit('aaa', false, '布兰', 12);
-// '布兰 12'
-// 'hello, 布兰 12'
+eventBus.on('test', fn1);
+eventBus.on('test', fn2);
+eventBus.emit('test', false, 'maidang', 24);
